@@ -1,0 +1,192 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+section{
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto 130px auto;
+}
+h1{
+  line-height: 1px;
+}
+h1 a{
+  display: block;
+}
+h2{
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+header{
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+header ul{
+  display: flex;
+  padding: 10px 0;
+}
+header li{
+  margin-left: 30px;
+}
+header li a{
+  color: black;
+}
+header li a:hover{
+  opacity: 0.7;
+}
+header li img.icon{
+  width: 20px;
+}
+
+.mainvisual{
+  margin-bottom: 80px;
+}
+.mainvisual img{
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+.about ul, .name{
+  margin-bottom: 30px;
+}
+.about p{
+  text-align: justify;
+}
+
+.works ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.works li{
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.news dl{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px lightgray;
+}
+.news dt{
+  width: 20%;
+  border-bottom: solid 1px lightgray;
+  padding: 15px;
+}
+.news dd{
+  width: 80%;
+  border-bottom: solid 1px lightgray;
+  padding: 15px;
+}
+
+.contact-form dl{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.contact-form dt{
+  width: 15%;
+}
+.contact-form dd{
+  width: 85%;
+  margin-bottom: 10px;
+}
+.name-form, .email-form, .message-form{
+  border: solid 1px lightgray;
+  padding: 10px;
+  width: 100%;
+}
+.message-form{
+  height: 100px;
+}
+.btn{
+  text-align: center;
+}
+.send{
+  width: 200px;
+  background-color: black;
+  color: white;
+  border: solid 1px ;
+  padding: 15px 0;
+}
+.send:hover{
+  background-color: white;
+  color: black;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 600px){
+  section{
+    margin-bottom: 70px;
+  }
+  h1{
+    margin-top: 20px;
+  }
+  h2{
+    margin-bottom: 40px;
+  }
+
+  header{
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  header li{
+    margin-left: 20px;
+  }
+
+  .works ul{
+    flex-direction: column;
+  }
+  .works li{
+    width: 100%;
+  }
+
+  .news dl{
+    flex-direction: column;
+  }
+  .news dt{
+    width: 100%;
+    padding-top: 0;
+    border-bottom: none;
+  }
+  .news dd{
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .contact-form dl{
+    flex-direction: column;
+  }
+  .contact-form dt{
+    width: 100%;
+  }
+  .contact-form dd{
+    width: 100%;
+  }
+}
